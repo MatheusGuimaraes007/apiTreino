@@ -2,11 +2,11 @@ require('dotenv').config();
 const mysql = require('mysql2');
 
 let pool = mysql.createPool({
-  user: 'Matheus',
-  password: 'AVNS_Tmk7RqYEHT6pq6V7YuZ',
-  database: 'defaultdb',
-  host: 'db-mysql-nyc3-88566-do-user-17142564-0.d.db.ondigitalocean.com',
-  port: 25060,
+  user: process.env.MYSQL_USER,
+  password: process.env.MYSQL_PASSWORD,
+  database: process.env.MYSQL_DATABASE,
+  host: process.env.MYSQL_HOST,
+  port: process.env.MYSQL_PORT,
 });
 
 exports.pool = pool;

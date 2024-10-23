@@ -3,9 +3,9 @@ const mysql = require('mysql2');
 
 let pool = mysql.createPool({
   user: 'Matheus',
-  password: process.env.DB_PASS,
+  password: 'AVNS_Tmk7RqYEHT6pq6V7YuZ',
   database: 'defaultdb',
-  host: process.env.DB_HOST,
+  host: 'db-mysql-nyc3-88566-do-user-17142564-0.d.db.ondigitalocean.com',
   port: 25060,
 });
 

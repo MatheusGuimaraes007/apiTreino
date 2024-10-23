@@ -5,7 +5,7 @@ let pool = mysql.createPool({
   user: 'Matheus',
   password: process.env.DB_PASS,
   database: 'defaultdb',
-  host: 'db-mysql-nyc3-88566-do-user-17142564-0.d.db.ondigitalocean.com',
+  host: process.env.DB_HOST,
   port: 25060,
 });
 

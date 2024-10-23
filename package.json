@@ -1,11 +1,11 @@
 {
-  "name": "rest-api",
+  "name": "api",
   "version": "1.0.0",
   "description": "Teste de REST API",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server.js"
+    "start": "node app.js"
   },
   "keywords": [
     "node",
@@ -25,5 +25,9 @@
   },
   "devDependencies": {
     "nodemon": "^3.1.7"
+  },
+  "engines": {
+    "node": "20.5.1",
+    "npm": "8.19.4"
   }
 }
